@@ -7,6 +7,7 @@
 :root {
     --clr-green: #c5f82a;
     --clr-white: #fff;
+    --grey-400: #666;
     --grey-700: #333;
     --grey-800: #1f1f1f;
     --grey-900: #141414;
@@ -47,10 +48,12 @@ a {
     font-size: 14px;
 }
 
-a:hover {
-    color: #fff;
+a:link,
+a:hover,
+a:active,
+a:focus {
+    color: #000;
 }
-
 
 .card {
     display: flex;
@@ -60,20 +63,45 @@ a:hover {
     background-color: var(--grey-800);
     padding: 1rem 2rem;
     border-radius: 15px;
+    margin-block-end: 4rem;
 }
 
 li {
-   margin-block-end: 2rem;
-   justify-content: center;
-   background-color: var(--grey-700);
-   text-align: center;
-   padding: 1rem 3rem;
-   border-radius: 10px;
+    Margin-block-end: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background-color: var(--grey-700);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+footer p {
+    color: var(--clr-white);
+}
+
+
+
+
+/* .links p:hover {
+    background-color: var(--clr-green);
+    color: #000;
+} */
+
+/* .links p {
+  margin-block-end: 2rem;
+   justify-content: center;
+    padding: 1rem 3rem;
+   border-radius: 10px;
+   background-color: var(--grey-400);
+} */
 
 li:hover {
     background-color: var(--clr-green);
-    color: #fff;;
+    color: #000;;
 }
 
 .location {
