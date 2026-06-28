@@ -21,9 +21,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    inline-size: 100vi;
-    block-size: 100vb;
+    margin: 7rem;
+    border-radius: 15px;
 }
+
+/* .container {
+   margin: 7rem;
+
+} */
 
 img {
     inline-size: 100px;
@@ -34,25 +39,44 @@ img {
 
 h2 {
     color: var(--clr-white);
-    /* padding-block-end: .5rem; */
+    font-size: 1.5rem;
+}
+.card {
+    padding-block: 2rem;
+    margin-block: 3rem;
 }
 
-ul {
-    list-style: none;
+.identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
 }
 
 
-a {
+button {
     text-decoration: none;
     color: var(--clr-white);
+    background-color: var(--grey-400);
     font-size: 14px;
+    padding: .6rem 3rem;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-a:link,
-a:hover,
-a:active,
-a:focus {
+
+button:hover,
+button:active,
+button:focus {
     color: #000;
+    background-color: var(--clr-green);
 }
 
 .card {
@@ -66,38 +90,15 @@ a:focus {
     margin-block-end: 4rem;
 }
 
-li {
-    Margin-block-end: 2rem;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem 3rem;
-    border-radius: 10px;
-    background-color: var(--grey-700);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-block-end: 2rem;
 }
 
 footer p {
     color: var(--clr-white);
 }
-
-
-
-
-/* .links p:hover {
-    background-color: var(--clr-green);
-    color: #000;
-} */
-
-/* .links p {
-  margin-block-end: 2rem;
-   justify-content: center;
-    padding: 1rem 3rem;
-   border-radius: 10px;
-   background-color: var(--grey-400);
-} */
 
 li:hover {
     background-color: var(--clr-green);
@@ -105,6 +106,7 @@ li:hover {
 }
 
 .location {
+    font-size: smaller;
     color: var(--clr-green);
     padding-block-start: .5rem;
     padding-block-end: 1.3rem;
