@@ -117,3 +117,11 @@ li:hover {
     font-size: 12px;
     padding-block-end: 1rem;
 }
+
+.attribution p {
+    color: var(--clr-white);
+}
+
+span {
+    color: var(--clr-green);
+}
