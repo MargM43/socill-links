@@ -9,7 +9,7 @@
     --clr-white: #fff;
     --grey-400: #666;
     --grey-700: #333;
-    --grey-800: #1f1f1f;
+    --grey-800: #3d3d3d;
     --grey-900: #141414;
 
 }
@@ -18,17 +18,27 @@ body {
     font-family: Inter, sans-serif;
     font-weight: 600;
     background-color: var(--grey-900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7rem;
-    border-radius: 15px;
 }
 
-/* .container {
-   margin: 7rem;
-
-} */
+.container {
+    /* inline-size: 100%; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-800);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin-block: 4rem;
+}
+ 
 
 img {
     inline-size: 100px;
@@ -40,10 +50,8 @@ img {
 h2 {
     color: var(--clr-white);
     font-size: 1.5rem;
-}
-.card {
-    padding-block: 2rem;
-    margin-block: 3rem;
+    letter-spacing: .15rem;
+    font-weight: 700;
 }
 
 .identity {
@@ -62,13 +70,13 @@ h2 {
 
 
 button {
+    cursor: pointer;
     text-decoration: none;
     color: var(--clr-white);
     background-color: var(--grey-400);
     font-size: 14px;
     padding: .6rem 3rem;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 
@@ -79,16 +87,7 @@ button:focus {
     background-color: var(--clr-green);
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grey-800);
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    margin-block-end: 4rem;
-}
+
 
 footer {
     display: flex;
@@ -98,11 +97,6 @@ footer {
 
 footer p {
     color: var(--clr-white);
-}
-
-li:hover {
-    background-color: var(--clr-green);
-    color: #000;;
 }
 
 .location {
